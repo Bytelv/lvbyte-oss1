@@ -31,7 +31,7 @@ jobs:
           
       - name: Push
         run: |
-          npm i node-fetch
+          npm install -g node-fetch
           node update.js
           
           
