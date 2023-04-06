@@ -3,4 +3,7 @@
   "version": "0.0.5",
   "description": "Somewhere to save the file from @lvbyte",
   "author": "lvbyte"
+},
+"dependencies": {
+  "node-fetch": "^3.1.1"
 }
