@@ -1,6 +1,7 @@
 /**
  * 更新 package.json 版本号
  */
+import fetch from "node-fetch";
 const fetch = require("node-fetch");
 const md5 = require("js-md5");
 const fs = require("fs");
