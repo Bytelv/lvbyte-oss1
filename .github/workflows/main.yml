@@ -8,6 +8,7 @@ on:
        - published
 
   workflow_dispatch:
+  push:
 
 jobs:
   publish-npm:
@@ -17,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
       # 安装 Node.js    
       - name: Setup Node
         uses: actions/setup-node@v1
