@@ -30,11 +30,8 @@ jobs:
           
           
       - name: Push
-        uses: EndBug/add-and-commit@v9
-        with: 
-          author_name: Bitbot
-          author_email: 2015078351@qq.com
-          message: 'Publish to Github'
+        run: |
+          node update.js
           
           
         
