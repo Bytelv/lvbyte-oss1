@@ -30,9 +30,9 @@ jobs:
           
       - name: Push
         run: |
-          npm install -g npm-fetch@2.6.0 -s
-          npm install js-md5 -s
-          node update.js
+         npm install node-fetch@2.6.0 -s
+         npm install js-md5 -s
+         node update.js
           
           
         
