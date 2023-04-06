@@ -37,12 +37,7 @@ jobs:
           
         
 
-      # 发布 NPM 包
-      - name: Publish Package
-        run: |
-          git config --global user.email "2015078351@qq.com"
-          git config --global user.name "lvbytebot"
-          npm version patch
-          npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: npm publish
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
