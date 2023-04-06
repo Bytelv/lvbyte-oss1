@@ -31,7 +31,6 @@ jobs:
           
       - name: Push
         run: |
-          export NODE_PATH=$(npm root --quiet -g)
           npm install -g npm-fetch
           node update.js
           
