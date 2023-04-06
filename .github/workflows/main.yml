@@ -26,16 +26,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
         
           
-      # 发布 NPM 包
-      - name: Publish Package
-        run: |
-          git config --global user.email "2015078351@qq.com"
-          git config --global user.name "lvbytebot"
-          npm version patch
-          npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-          
           
       - name: Push
         run: |
@@ -45,3 +35,13 @@ jobs:
           git pull
           git reset - -hard origin/main
           git push -u origin main
+
+      # 发布 NPM 包
+      - name: Publish Package
+        run: |
+          git config --global user.email "2015078351@qq.com"
+          git config --global user.name "lvbytebot"
+          npm version patch
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
