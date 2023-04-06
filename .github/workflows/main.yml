@@ -30,9 +30,14 @@ jobs:
           
           
       - name: Push
-        run: |
+        uses: EndBug/add-and-commit@v9
+        with: 
+          author_name: Bitbot
+          author_email: 2015078351@qq.com
+          message: 'Publish to Github'
           
-          git branch --set-upstream-to=origin/main main
+          
+        
 
       # 发布 NPM 包
       - name: Publish Package
