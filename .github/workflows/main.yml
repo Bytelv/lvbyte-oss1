@@ -21,17 +21,17 @@ jobs:
         with:
           ref: main
       # 安装 Node.js    
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - name: Setup Node.js 16.10.0
+        uses: actions/setup-node@master
         with:
-          node-version: "12.x"
-          registry-url: https://registry.npmjs.org/
+          node-version: "16.10.0"
         
           
           
       - name: Push
         run: |
-          npm install -g npm-fetch@2.6.0
+          npm install -g npm-fetch@2.6.0 -s
+          npm install js-md5 -s
           node update.js
           
           
