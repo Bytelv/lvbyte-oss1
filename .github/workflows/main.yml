@@ -8,7 +8,6 @@ on:
        - published
 
   workflow_dispatch:
-  push:
 
 jobs:
   publish-npm:
