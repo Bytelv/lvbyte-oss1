@@ -131,7 +131,7 @@
 
 .tianliGPT-title {
     display: flex;
-    color: var(--heo-lighttext);
+    color: #000000;
     border-radius: 8px;
     align-items: center;
     padding: 0 12px;
@@ -150,7 +150,7 @@
     padding: 8px 12px;
     background: #fff;
     border-radius: 8px;
-    border: var(--style-border-always);
+    border: #e3e8f7;
     font-size: 15px;
     line-height: 1.4;
     display: flex;
