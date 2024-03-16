@@ -96,15 +96,28 @@
 }
 
 .qexo-myfriend {
-  width: 56px !important;
-  height: 56px !important;
-  border-radius: 50%;
-  border: 1px solid #ddd;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  margin-top: 14px !important;
-  margin-left: 14px !important;
-  background-color: #fff !important;
+  color: var(--text-p1);
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem .5rem;
+  width: 56px !important; /* 根据之前的样式，您可能想要保留这个宽度设置 */
+  height: 56px !important; /* 同上，保留高度设置 */
+  border: 1px solid #ddd; /* 保留边框设置 */
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15); /* 保留盒子阴影设置 */
+  margin-top: 14px !important; /* 保留外边距设置 */
+  margin-left: 14px !important; /* 保留外边距设置 */
+  background-color: #fff !important; /* 保留背景颜色设置 */
 }
+
 
 .qexo-frienddiv {
   height: 92px;
@@ -123,8 +136,17 @@
   }
 }
 
-.qexo-frienddiv:hover {
-  background: rgba(87, 142, 224, 0.15);
+.qexo-myfriend:hover {
+  background: var(--block-hover); /* 鼠标悬停时的背景变化样式 */
+}
+
+.qexo-myfriend:hover img {
+  transform: scale(1.2) rotate(8deg); /* 鼠标悬停时图片变换样式 */
+  box-shadow: 0 12px 16px -4px rgba(0, 0, 0, .2); /* 鼠标悬停时图片的盒子阴影样式 */
+  transition: transform .2s ease-out, box-shadow .2s ease-out; /* 定义过渡效果 */
+  -moz-transition: transform .2s ease-out, box-shadow .2s ease-out; /* 定义过渡效果 */
+  -webkit-transition: transform .2s ease-out, box-shadow .2s ease-out; /* 定义过渡效果 */
+  -o-transition: transform .2s ease-out, box-shadow .2s ease-out; /* 定义过渡效果 */
 }
 
 .qexo-frienddiv:hover .qexo-frienddivleft img {
